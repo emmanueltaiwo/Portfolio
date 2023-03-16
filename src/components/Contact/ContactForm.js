@@ -33,7 +33,7 @@ const ContactForm = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-center w-full mt-5">
-                    <Button type='submit'>Send message</Button>
+                    <Button type='submit'>Send</Button>
                 </div>
             </form>
         </div>

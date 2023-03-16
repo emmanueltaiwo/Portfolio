@@ -9,7 +9,7 @@ const ContactMain = () => {
         <span className='text-center'>📞</span>
         <p className='ml-5 mr-5 text-neutral-500 text-center'>Feel free to contact me by submitting the form below, and I&apos;ll get back to you as soon as possible</p>
         </div>
-        <main className='mt-10 ml-10 mr-10'>
+        <main className='mt-10 ml-2 mr-2 xl:ml-10 xl:mr-10 md:ml-10 md:mr-10'>
             <ContactForm />
         </main>
     </div>
