@@ -26,7 +26,7 @@ const Footer = () => {
                     </div>
                 </div>
                 </a>
-                <a href="" target='_blank'>
+                <a href="https://twitter.com/realdevemmanuel" target='_blank'>
                 <div className="flex items-center border w-auto rounded-lg px-4 py-2 w-44 mx-2">
                     <img src="https://i.ibb.co/pX7CspW/pngwing-com-1.png" className="w-7 md:w-8" />
                     <div className="text-left ml-3">
