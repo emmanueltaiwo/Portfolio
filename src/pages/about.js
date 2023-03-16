@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react'
-import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
-import HomeMain from '@/components/Main/HomeMain'
+import React, { useEffect } from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
+import AboutMain from '@/components/About/AboutMain'
+import Footer from '@/components/Footer/Footer'
 
-export default function Home() {
+const about = () => {
   useEffect(() => {
     const handleContextmenu = e => {
         e.preventDefault()
@@ -17,16 +16,17 @@ export default function Home() {
 }, [ ])
   return (
     <>
-      <Head>
-        <title>Emmanuel Taiwo - Software Engineer</title>
-        <meta name="description" content="Emmanuel Taiwo - Software Engineer" />
+    <Head>
+        <title>Emmanuel Taiwo - Software Engineer - About Me</title>
+        <meta name="description" content="Emmanuel Taiwo - Software Engineer - About Me" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
-      </Head>
-      
+    </Head>
       <Header />
-      <HomeMain />
+      <AboutMain />
       <Footer />
     </>
   )
 }
+
+export default about
