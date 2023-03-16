@@ -25,7 +25,7 @@ const ProjectList = ({ title, description, projectImage, skills, repo, demo }) =
             <div>
                 <div className='border-4 p-1 pb-3 xl:pb-0 border-blue-400 rounded'>
                     <img src={projectImage} alt="" className='w-auto' />
-                    <div className='grid gap-2 grid-rows-2 xl:grid-cols-2 md:grid-rows-2'>
+                    <div className='grid gap-2 grid-rows-2 xl:grid-cols-2 md:grid-rows-2 mt-5'>
                     <a href={demo} className='flex' target='_blank'>
                     <Button>View Demo</Button>
                     </a>
