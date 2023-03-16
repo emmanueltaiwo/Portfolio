@@ -3,8 +3,6 @@ import Button from '../Button/Button'
 import StackButton from '../Button/StackButton'
 
 const ProjectList = ({ title, description, projectImage, skills, repo, demo }) => {
-    const arr = ['Next.js', 'Tailwind']
-
     const getSkills = () => {
         return skills.map((skill) => {
           return <StackButton key={skill}>{skill}</StackButton>;

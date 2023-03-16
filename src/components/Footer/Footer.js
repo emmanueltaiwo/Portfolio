@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
+import CustomFooterIcon from '../UI/CustomFooterIcon'
 
 const Footer = () => {
     const router = useRouter()
@@ -11,28 +12,19 @@ const Footer = () => {
             <p> A Front End Developer with an eye for design and deep understanding of usability goals. </p>
             <div className="flex justify-center my-10">
                 <a href="https://www.linkedin.com/in/realemmanuel/" target='_blank'>
-                <div className="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2">
-                    <img src="https://i.ibb.co/5kmh7gS/pngwing-com.png" className="w-7 md:w-8" />
-                    <div className="text-left ml-3">
-                        <p className='text-xs text-gray-200'>Linkedin</p>
-                    </div>
-                </div>
+                    <CustomFooterIcon>
+                        Linkedin
+                    </CustomFooterIcon>
                 </a>
                 <a href="https://github.com/realemmanuel" target='_blank'>
-                <div className="flex items-center border w-auto rounded-lg px-4 py-2 w-44 mx-2">
-                    <img src="https://i.ibb.co/hBZgb6g/pngwing-com-2.png" className="w-7 md:w-8" />
-                    <div className="text-left ml-3">
-                        <p className='text-xs text-gray-200'>Github</p>
-                    </div>
-                </div>
+                    <CustomFooterIcon>
+                        Github
+                    </CustomFooterIcon>
                 </a>
                 <a href="https://twitter.com/realdevemmanuel" target='_blank'>
-                <div className="flex items-center border w-auto rounded-lg px-4 py-2 w-44 mx-2">
-                    <img src="https://i.ibb.co/pX7CspW/pngwing-com-1.png" className="w-7 md:w-8" />
-                    <div className="text-left ml-3">
-                        <p className='text-xs text-gray-200'>Twitter</p>
-                    </div>
-                </div>
+                    <CustomFooterIcon>
+                        Twitter
+                    </CustomFooterIcon>
                 </a>
             </div>
         </div>

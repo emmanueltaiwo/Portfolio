@@ -1,5 +1,10 @@
 import React from 'react'
+import Card from '../UI/Card'
+import CustomSection from '../UI/CustomSection'
 import ProjectList from './ProjectList'
+import CustomHeaderText from '../UI/CustomHeaderText'
+import CustomEmoji from '../UI/CustomEmoji'
+import CustomParagraphText from '../UI/CustomParagraphText'
 
 const ProjectMain = () => {
     const projectData = [
@@ -17,8 +22,8 @@ const ProjectMain = () => {
             title: 'Linkedin Clone',
             description: 'This Project is a Linkedin Clone where users can create account and sign in and can also post on the app',
             projectImage: 'https://i.ibb.co/2q0Tvcn/Screenshot-2023-03-16-at-10-27-42-AM.png',
-            skills: ['React.js', 'Redux', 'Tailwind css', 'Firebase'],
-            repo: '',
+            skills: ['React.js', 'Redux', 'CSS', 'Firebase'],
+            repo: 'https://github.com/realemmanuel/linkedin-clone',
             demo: '',
         },
         {
@@ -59,25 +64,30 @@ const ProjectMain = () => {
         },
     ]
   return (
-    <div className='w-screen bg-gray-100 flex flex-col select-none h-full'>
-        <div className='mt-36 ml-auto mr-auto flex flex-col gap-4'>
-        <h1 className='font-righteous text-4xl font-black text-center'>MY PROJECTS</h1>
-        <span className='text-center'>🛠️</span>
-        <p className='ml-5 mr-5 text-neutral-500 text-center'>Here you will find some of the personal projects that I created with each project containing links to a github repo and live demo</p>
-    </div>
+    <Card>
+        <CustomSection>
+            <CustomHeaderText>MY PROJECTS</CustomHeaderText>
+            <CustomEmoji>🛠️</CustomEmoji>
+            <CustomParagraphText>Here you will find some of the personal projects that I created with each project containing links to a github repo and live demo</CustomParagraphText>
+        </CustomSection>
     
-    <main className='mt-20 grid gap-10 ml-5 mr-5 xl:ml-32 xl:mr-32 justify-center xl:flex-row md:flex-row sm:flex-row'>
-        {projectData.map((project) => {
-            return (
-                <ProjectList key={project.id} title={project.title} description={project.description} projectImage={project.projectImage} skills={project.skills} repo={project.repo} demo={project.demo} />
-            )
-        })}
-    </main>
-    </div>
+        <main className='mt-20 grid gap-10 ml-5 mr-5 xl:ml-32 xl:mr-32 justify-center xl:flex-row md:flex-row sm:flex-row'>
+            {projectData.map((project) => {
+                return (
+                    <ProjectList
+                        key={project.id}
+                        title={project.title} 
+                        description={project.description} 
+                        projectImage={project.projectImage} 
+                        skills={project.skills} 
+                        repo={project.repo} 
+                        demo={project.demo} 
+                    />
+                )
+            })}
+        </main>
+    </Card>
   )
 }
 
 export default ProjectMain
-
-
-// 

@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from '../Button/Button'
 import TechStack from './TechStack'
+import CustomMediumText from '../UI/CustomMediumText'
 
 const AboutRight = () => {
     const techStackList = [
@@ -73,7 +73,7 @@ const AboutRight = () => {
     ]
   return (
     <div className='xl:w-6/12 md:w-2/5 select-none'>
-        <h1 className='ml-3 font-righteous text-3xl font-black'>My Tech Stack</h1>
+        <CustomMediumText>My Tech Stack</CustomMediumText>
         <div className='mt-10 mx-2 flex flex-wrap'>
         {techStackList.map((tech) => {
             return (

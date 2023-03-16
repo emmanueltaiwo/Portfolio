@@ -1,12 +1,13 @@
 import React from 'react'
 import Button from '../Button/Button'
 import { useRouter } from 'next/router'
+import CustomMediumText from '../UI/CustomMediumText'
 
 const AboutLeft = () => {
     const router = useRouter()
   return (
     <div className='xl:w-2/5 md:w-2/5'>
-        <h1 className='font-righteous text-3xl font-black'>Get To Know Me!</h1>
+        <CustomMediumText>Get To Know Me!</CustomMediumText>
         <p className='mt-10 text-neutral-500 pb-10 text-base'>I&apos;m a Frontend Developer passionate about building responsive UI & Web Applications that lead to the success of the overall product. You can check out some of my work in the Projects section.
         <br/><br/>
 
