@@ -7,7 +7,7 @@ const ContactMain = () => {
         <div className='mt-36 ml-auto mr-auto flex flex-col gap-4'>
         <h1 className='font-righteous text-4xl font-black text-center'>CONTACT ME</h1>
         <span className='text-center'>📞</span>
-        <p className='ml-5 mr-5 text-neutral-500 text-center'>Feel free to contact me by submitting the form below, and I'll get back to you as soon as possible</p>
+        <p className='ml-5 mr-5 text-neutral-500 text-center'>Feel free to contact me by submitting the form below, and I&apos;ll get back to you as soon as possible</p>
         </div>
         <main className='mt-10 ml-10 mr-10'>
             <ContactForm />

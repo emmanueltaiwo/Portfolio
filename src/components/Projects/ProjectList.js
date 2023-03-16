@@ -19,11 +19,6 @@ const ProjectList = ({ title, description, projectImage, skills }) => {
                 <p className='mt-5 mr-5 text-neutral-500'>{description}</p>
                 <div className='mt-5 flex gap-3 flex-wrap'>
                         {getSkills()}
-                    {/* <StackButton>Next.js</StackButton>
-                    <StackButton>Redux</StackButton>
-                    <StackButton>Firebase</StackButton>
-                    <StackButton>Tailwind css</StackButton>
-                    <StackButton>Next Auth</StackButton> */}
                 </div>
             </div>
 

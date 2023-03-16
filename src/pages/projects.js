@@ -5,15 +5,15 @@ import ProjectMain from '@/components/Projects/ProjectMain'
 import Footer from '@/components/Footer/Footer'
 
 const projects = () => {
-//   useEffect(() => {
-//     const handleContextmenu = e => {
-//         e.preventDefault()
-//     }
-//     document.addEventListener('contextmenu', handleContextmenu)
-//     return function cleanup() {
-//         document.removeEventListener('contextmenu', handleContextmenu)
-//     }
-// }, [ ])
+  useEffect(() => {
+    const handleContextmenu = e => {
+        e.preventDefault()
+    }
+    document.addEventListener('contextmenu', handleContextmenu)
+    return function cleanup() {
+        document.removeEventListener('contextmenu', handleContextmenu)
+    }
+}, [ ])
   return (
     <>
     <Head>
