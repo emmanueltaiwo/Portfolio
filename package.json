@@ -9,15 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.13",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.5",
     "@react-icons/all-files": "^4.1.0",
     "emailjs-com": "^3.2.0",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "framer-motion": "^10.12.16",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "react-intersection-observer": "^9.5.0",
+    "react-typewriter-effect": "^1.1.0",
+    "typewriter-effect": "^2.20.1"
   },
   "main": "index.js",
   "author": "Emmanuel Taiwo <devemmanuel1@gmail.com>",

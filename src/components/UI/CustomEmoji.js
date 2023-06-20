@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const CustomEmoji = (props) => {
-  return <span className='text-center'>{props.children}</span>
-}
+  return <span className="text-center">{props.children}</span>;
+};
 
-export default CustomEmoji
+export default CustomEmoji;

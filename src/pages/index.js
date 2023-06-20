@@ -1,20 +1,13 @@
-import React, { useEffect } from 'react'
-import Footer from '@/components/Footer/Footer'
-import Header from '@/components/Header/Header'
-import HomeMain from '@/components/Main/HomeMain'
-import Head from 'next/head'
-import Image from 'next/image'
+import React, { useEffect, useState } from "react";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
+import HomeMain from "@/components/Main/HomeMain";
+import Head from "next/head";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 export default function Home() {
-  useEffect(() => {
-    const handleContextmenu = e => {
-        e.preventDefault()
-    }
-    document.addEventListener('contextmenu', handleContextmenu)
-    return function cleanup() {
-        document.removeEventListener('contextmenu', handleContextmenu)
-    }
-}, [ ])
   return (
     <>
       <Head>
@@ -23,10 +16,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      
-      <Header />
-      <HomeMain />
-      <Footer />
+
+      <div>
+        <>
+          <Header />
+          <HomeMain />
+          <Footer />
+        </>
+      </div>
     </>
-  )
+  );
 }
