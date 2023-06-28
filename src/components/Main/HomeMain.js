@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import Button from "../Button/Button";
 import HomeBackground from "../UI/HomeBackground";
+import Link from "next/link";
 
 const HomeMain = () => {
   const router = useRouter();
@@ -40,16 +41,17 @@ const HomeMain = () => {
         A Frontend developer building my version of the digital world one step
         at a time.
       </motion.p>
-      <div className="w-full flex gap-3 flex-col items-center sm:flex-row justify-center space-x-4  animate-none">
+      <div className="w-full flex gap-1 md:gap-3 flex-row items-center sm:flex-row justify-center space-x-4  animate-none">
         {" "}
         <motion.div
-          onClick={() => router.push("/projects")}
           className="flex-shrink-0"
           variants={buttonVariants}
           initial="hidden"
           animate="visible"
         >
-          <Button>Resume</Button>
+          <a href="/assets/documents/My Resume.pdf" target="_blank">
+            <Button>Resume</Button>
+          </a>
         </motion.div>
         <motion.div
           onClick={() => router.push("/projects")}

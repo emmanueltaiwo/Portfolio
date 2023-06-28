@@ -107,7 +107,7 @@ const ProjectMain = () => {
         </motion.p>
 
         <motion.p
-          className="text-center ml-auto mr-auto px-3 text-[15px] sm:text-lg text-gray-600"
+          className="text-center ml-auto mr-auto lg:px-3 text-[15px] sm:text-lg text-gray-600"
           variants={textVariants}
           initial="hidden"
           animate="visible"
