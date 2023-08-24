@@ -31,14 +31,14 @@ const AboutSectionLeft = (props: AboutSectionLeftProps) => {
         <br />
         <br />
         🚀 My toolkit includes React.js, Next.js, and a touch of creative magic
-        to craft responsive and engaging websites. I'm a firm believer in the
+        to craft responsive and engaging websites. I&apos;m a firm believer in the
         power of clean code and intuitive design to create memorable online
         journeys.
         <br />
         <br />
         🎨 When I&apos;m not coding, you&apos;ll find me exploring new UI
         trends, sipping coffee, and turning lines of code into visual stories.
-        Let's connect, collaborate, and turn your web dreams into reality!
+        Let&spos;s connect, collaborate, and turn your web dreams into reality!
       </motion.p>
     </article>
   );

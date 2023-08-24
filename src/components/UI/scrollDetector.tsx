@@ -20,7 +20,7 @@ const ScrollDetector = (props: DetectorProps) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   return null;
 };

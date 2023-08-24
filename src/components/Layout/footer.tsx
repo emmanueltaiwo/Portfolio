@@ -17,8 +17,8 @@ const Footer = () => {
         Get In Touch
       </h1>
       <p className="text-black mx-5 md:mx-auto md:w-[600px] text-[15px] md:text-[20px]">
-        I'm currently looking for opportunities. Whether its a Full-Time Job or
-        a Freelance work. Send me a message, I'll try to get back to you as soon
+        I&apos;m currently looking for opportunities. Whether its a Full-Time Job or
+        a Freelance work. Send me a message, I&apos;ll try to get back to you as soon
         as possible.
       </p>
       <div className="w-full mx-auto flex flex-col md:flex-row items-center justify-center gap-5">
