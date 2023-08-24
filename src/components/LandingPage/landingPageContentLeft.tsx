@@ -52,7 +52,7 @@ const LandingPageContentLeft = (props: LandingPageContentLeftProps) => {
         className="mt-3 w-fit h-fit text-black flex gap-3 items-center justify-center text-lg font-bold border-[1px] py-2 border-blue-500 px-[3vh] hover:border-black rounded-md hover:text-blue-700"
       >
         <Image
-          src="/assets/images/download.gif"
+          src="/assets/Images/download.gif"
           width={40}
           height={40}
           alt="Hero Image"

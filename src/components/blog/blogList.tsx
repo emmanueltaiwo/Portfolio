@@ -1,5 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
 
 const BlogList = () => {
   return (
@@ -12,7 +12,7 @@ const BlogList = () => {
         <article className="border-[1px] border-blue-700 p-3 rounded-lg xl:mx-20 lg:mx-10 mx-5 mt-[5vh] flex flex-col lg:flex-row lg:items-center gap-5">
           <div className="h-full">
             <Image
-              src="/assets/images/sportpals.png"
+              src="/assets/Images/sportpals.png"
               width={500}
               height={600}
               alt="Thumbnail"
@@ -45,6 +45,6 @@ const BlogList = () => {
       </main>
     </section>
   );
-}
+};
 
-export default BlogList
+export default BlogList;

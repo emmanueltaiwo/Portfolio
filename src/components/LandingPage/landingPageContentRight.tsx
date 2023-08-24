@@ -16,7 +16,7 @@ const LandingPageContentRight = (props: LandingPageContentRightProps) => {
       className="md:mt-5 mx-5 lg:mx-10 xl:mx-20 lg:mt-0"
     >
       <Image
-        src="/assets/images/hero.gif"
+        src="/assets/Images/hero.gif"
         width={150}
         height={150}
         className="lg:min-w-[400px] min-w-[320px] md:min-w-[500px] sm:min-w-[450px] mx-auto xl:min-w-[500px]"

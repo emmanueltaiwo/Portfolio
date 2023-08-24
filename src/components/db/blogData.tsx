@@ -40,10 +40,10 @@ export const topicsList = [
 export const blogPostData = [
   {
     id: 1,
-    coverImg: "/assets/images/sportpals.png",
+    coverImg: "/assets/Images/sportpals.png",
     header:
       "Empowering Sports Enthusiasts Globally: The Story of SportPals - A Dynamic Web Application Connecting Passionate Athletes",
-      dateReleased: "August 24 2023",
-      description: ""
+    dateReleased: "August 24 2023",
+    description: "",
   },
 ];

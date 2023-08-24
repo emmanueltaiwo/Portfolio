@@ -124,7 +124,7 @@ const MobileNav = (props: MobileNavProps) => {
                     className="w-[90%] bg-white flex gap-3 items-center justify-center text-lg font-bold mx-5 border-[1px] border-blue-500 py-2 hover:border-black"
                   >
                     <Image
-                      src="/assets/images/mail.gif"
+                      src="/assets/Images/mail.gif"
                       height={50}
                       width={50}
                       alt="Mail Gif"
