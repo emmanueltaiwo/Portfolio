@@ -29,7 +29,7 @@ const LandingPage = () => {
         animate="visible"
       >
         <Image
-          src="/assets/images/leaf-icon-bottom.svg"
+          src="/assets/Images/leaf-icon-bottom.svg"
           width={200}
           height={200}
           alt="leaf-icon-bottom"
@@ -37,7 +37,7 @@ const LandingPage = () => {
         />
 
         <Image
-          src="/assets/images/leaf-icon-top.svg"
+          src="/assets/Images/leaf-icon-top.svg"
           width={200}
           height={200}
           alt="leaf-icon-bottom"
@@ -45,7 +45,7 @@ const LandingPage = () => {
         />
 
         <Image
-          src="/assets/images/blue-circle.svg"
+          src="/assets/Images/blue-circle.svg"
           width={50}
           height={50}
           alt="leaf-icon-bottom"

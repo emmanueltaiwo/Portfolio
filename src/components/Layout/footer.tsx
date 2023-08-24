@@ -17,9 +17,9 @@ const Footer = () => {
         Get In Touch
       </h1>
       <p className="text-black mx-5 md:mx-auto md:w-[600px] text-[15px] md:text-[20px]">
-        I&apos;m currently looking for opportunities. Whether its a Full-Time Job or
-        a Freelance work. Send me a message, I&apos;ll try to get back to you as soon
-        as possible.
+        I&apos;m currently looking for opportunities. Whether its a Full-Time
+        Job or a Freelance work. Send me a message, I&apos;ll try to get back to
+        you as soon as possible.
       </p>
       <div className="w-full mx-auto flex flex-col md:flex-row items-center justify-center gap-5">
         <a
@@ -27,7 +27,7 @@ const Footer = () => {
           className="w-fit h-fit text-black flex gap-3 items-center justify-center text-lg font-bold mx-5 border-[1px] hover:text-blue-700 border-blue-500 py-3 px-[5vh] hover:border-black"
         >
           <Image
-            src="/assets/images/chat.gif"
+            src="/assets/Images/chat.gif"
             height={50}
             width={50}
             alt="Mail Gif"
@@ -40,7 +40,7 @@ const Footer = () => {
           className="w-fit h-fit text-black flex gap-3 items-center justify-center text-lg font-bold mx-5 border-[1px] py-3 hover:text-blue-700 border-blue-500 px-[5vh] hover:border-black"
         >
           <Image
-            src="/assets/images/mail.gif"
+            src="/assets/Images/mail.gif"
             height={50}
             width={50}
             alt="Mail Gif"

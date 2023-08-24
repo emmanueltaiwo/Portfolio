@@ -50,7 +50,7 @@ const Navbar = (props: navBarProps) => {
         <div className="my-auto ml-[5vh] lg:mx-16 xl:ml-20">
           <Link href="/">
             <Image
-              src="/assets/images/logo.png"
+              src="/assets/Images/logo.png"
               width={20}
               height={20}
               className="w-[40px] rounded-tl-lg"

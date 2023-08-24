@@ -4,7 +4,7 @@ export const projectsData = [
     title: "Sportpals",
     description:
       "SportPals is a dynamic web application that brings sports enthusiasts together from around the world. As a passionate frontend developer, I conceptualized and brought this project to life, showcasing my expertise in creating engaging user experiences and harnessing the power of modern frontend technologies. It is a rich social media platform where users can register using their google account and engage with people around the world by posting on their feed, adding friends, chatting with people around the world, checking live scores and live stats of any football match and also have the ability to change their username and details",
-    coverImg: "/assets/images/sportpals.png",
+    coverImg: "/assets/Images/sportpals.png",
     techStack: [
       "React.js",
       "Next.js",
@@ -74,7 +74,7 @@ export const projectsData = [
     title: "Expense Tracker",
     description:
       "The Expense Tracker app is designed to help users keep track of their expenses and financial transactions in a convenient and organized manner. The app allows users to create new expenses by inputting essential details such as the expense title, the amount spent, and the date of the transaction. Additionally, the app provides a filtering feature that enables users to sort and view expenses based on the year they occurred.",
-    coverImg: "/assets/images/expense-tracker.png",
+    coverImg: "/assets/Images/expense-tracker.png",
     techStack: ["React.js", "CSS", "Javascript"],
     liveLink: "https://emmanuelexpense-tracker.vercel.app/",
     githubRepo: "https://github.com/realemmanuel/expense-tracker",
@@ -109,7 +109,7 @@ export const projectsData = [
     title: "Cart App",
     description:
       "Introducing CartApp, a cutting-edge e-commerce application built using Next.js, React's useReducer hook, Tailwind CSS, and the FakeStore API. CartApp revolutionizes your shopping experience, offering a seamless and intuitive platform for discovering, exploring, and purchasing a wide range of products. With a rich set of features, CartApp transforms online shopping into a delightful journey.",
-    coverImg: "/assets/images/cart-app.png",
+    coverImg: "/assets/Images/cart-app.png",
     techStack: ["React.js", "Tailwind css", "API", "Javascript"],
     liveLink: "https://emmanuel-cart-app.vercel.app/",
     githubRepo: "https://github.com/realemmanuel/cart-app",
