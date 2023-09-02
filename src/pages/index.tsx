@@ -8,10 +8,6 @@ import ProjectSection from "../components/Home/projectSection";
 import dynamic from "next/dynamic";
 
 export default function Home() {
-  const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-    ssr: false,
-  });
-
   const [userHasScroll, setUserHasScroll] = useState(false);
 
   const handleUserScroll = (hasScroll: boolean) => {
@@ -73,26 +69,6 @@ export default function Home() {
           content="emmanuel, emmanuel taiwo, emmanuel taiwo oluwafunso, frontend developer, web development, React, JavaScript, software engineer"
         />
       </Head>
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={5}
-        color="0, 3, 255"
-        outerAlpha={5}
-        innerScale={5}
-        outerScale={5}
-        clickables={[
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          "label[for]",
-          "select",
-          "textarea",
-          "button",
-          ".link",
-        ]}
-      />
 
       <Layout userHasScroll={userHasScroll}>
         <ScrollDetector onScroll={handleUserScroll} />

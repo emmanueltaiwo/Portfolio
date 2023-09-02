@@ -22,36 +22,6 @@ const LandingPage = () => {
 
   return (
     <main className="w-full h-[100vh] mt-[4rem] lg:mt-0 flex gap-5 flex-col lg:flex-row lg:justify-around xl:justify-between lg:items-center">
-      <motion.div
-        ref={ref}
-        variants={textVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        <Image
-          src="/assets/Images/leaf-icon-bottom.svg"
-          width={200}
-          height={200}
-          alt="leaf-icon-bottom"
-          className="w-[150px] sm:w-[200px] absolute top-[300px] xl:right-0 xl:left-0 lg:left-[-0px]"
-        />
-
-        <Image
-          src="/assets/Images/leaf-icon-top.svg"
-          width={200}
-          height={200}
-          alt="leaf-icon-bottom"
-          className="w-[150px] sm:w-[200px] absolute top-[50px] right-0"
-        />
-
-        <Image
-          src="/assets/Images/blue-circle.svg"
-          width={50}
-          height={50}
-          alt="leaf-icon-bottom"
-          className="w-[50px] sm:w-[50px] hidden lg:block absolute top-[150px] left-[100px]"
-        />
-      </motion.div>
       <LandingPageContentLeft textVariants={textVariants} />
       <LandingPageContentRight textVariants={textVariants} />
     </main>
