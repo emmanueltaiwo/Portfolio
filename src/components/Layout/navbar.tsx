@@ -47,13 +47,13 @@ const Navbar = (props: navBarProps) => {
             : "bg-white w-full h-[4rem] fixed top-0 z-20 flex justify-between translate-y-0"
         }`}
       >
-        <div className="my-auto ml-[5vh] lg:mx-16 xl:ml-20">
+        <div className="my-auto sm:ml-[3vh] md:ml-[3vh] lg:mx-20 xl:ml-16">
           <Link href="/">
             <Image
               src="/assets/Images/logo.png"
-              width={20}
-              height={20}
-              className="w-[40px] rounded-tl-lg"
+              width={60}
+              height={60}
+              className="w-full"
               alt="My Logo"
               priority
             />

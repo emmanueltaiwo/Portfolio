@@ -3,7 +3,6 @@ import ScrollDetector from "../../components/UI/scrollDetector";
 import Layout from "../../components/Layout";
 import AllProjects from "../../components/Projects/allProjects";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 
 const Projects = () => {
   const [userHasScroll, setUserHasScroll] = useState(false);

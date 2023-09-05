@@ -22,23 +22,26 @@ const AboutSectionLeft = (props: AboutSectionLeftProps) => {
         variants={textVariants}
         initial="hidden"
         animate="visible"
-        className="lg:w-[500px] font-roboto xl:w-[600px] text-[16.5px] md:text-[20px] text-slate-800 mt-[5vh]"
+        className="lg:w-[500px] font-roboto xl:w-[600px] text-[16.5px] md:text-[18px] text-slate-800 mt-[5vh]"
       >
         👋 Hello! I&apos;m Emmanuel, a passionate frontend developer on a
         mission to turn ideas into beautifully functional web experiences. With
-        a strong foundation in HTML, CSS, JavaScript, Typescript, Tailwind css I
-        create user-friendly interfaces that bring design concepts to life.
+        a strong foundation in HTML, CSS, JavaScript, and TypeScript, along with
+        the creative touch of Tailwind CSS, I specialize in creating
+        user-friendly interfaces that not only bring design concepts to life but
+        also love solving problems through my skills.
         <br />
         <br />
-        🚀 My toolkit includes React.js, Next.js, and a touch of creative magic
-        to craft responsive and engaging websites. I&apos;m a firm believer in the
-        power of clean code and intuitive design to create memorable online
-        journeys.
+        🚀 My toolkit includes React.js and Next.js, and I believe in harnessing
+        the power of clean code and intuitive design to solve complex challenges
+        and create memorable online journeys. Whether it&apos;s optimizing
+        performance, enhancing user experiences, or tackling unique development
+        hurdles, I thrive on turning obstacles into opportunities.
         <br />
         <br />
         🎨 When I&apos;m not coding, you&apos;ll find me exploring new UI
         trends, sipping coffee, and turning lines of code into visual stories.
-        Let&spos;s connect, collaborate, and turn your web dreams into reality!
+        Let&apos;s connect, collaborate, and turn your web dreams into reality!
       </motion.p>
     </article>
   );

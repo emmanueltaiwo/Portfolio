@@ -22,7 +22,7 @@ const LandingPageContentLeft = (props: LandingPageContentLeftProps) => {
         variants={textVariants}
         initial="hidden"
         animate="visible"
-        className="text-[40px] lg:text-[50px] xl:text-[70px] sm:text-[70px] font-bold"
+        className="text-[40px] lg:text-[55px] xl:text-[70px] sm:text-[70px] font-bold"
       >
         Emmanuel Taiwo
       </motion.h1>
@@ -47,9 +47,9 @@ const LandingPageContentLeft = (props: LandingPageContentLeftProps) => {
         variants={textVariants}
         initial="hidden"
         animate="visible"
-        href="/assets/documents/My Resume.pdf"
+        href="/assets/documents/Taiwo Emmanuel Resume.pdf"
         target="_blank"
-        className="mt-3 w-fit h-fit text-black flex gap-3 items-center justify-center text-lg font-bold border-[1px] py-2 border-blue-500 px-[3vh] hover:border-black rounded-md hover:text-blue-700"
+        className="mt-3 w-fit h-fit flex gap-3 items-center justify-center text-lg font-bold border-[1px] py-2 border-blue-500 px-[3vh] hover:border-black rounded-md "
       >
         <Image
           src="/assets/Images/download.gif"
@@ -57,7 +57,9 @@ const LandingPageContentLeft = (props: LandingPageContentLeftProps) => {
           height={40}
           alt="Hero Image"
         />
-        <span className="text-[15px]">My Resume</span>
+        <span className="text-[15px] text-blue-500 hover:text-black">
+          My Resume
+        </span>
       </motion.a>
     </div>
   );

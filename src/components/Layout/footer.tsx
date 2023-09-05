@@ -24,7 +24,7 @@ const Footer = () => {
       <div className="w-full mx-auto flex flex-col md:flex-row items-center justify-center gap-5">
         <a
           href="https://wa.me/2348127984099?text=Hello%20Emmanuel%2C%20I%20just%20visited%20your%20portfolio%20and%20i%20want%20to%20discuss%20with%20you%20about%20some%20opportunities."
-          className="w-fit h-fit text-black flex gap-3 items-center justify-center text-lg font-bold mx-5 border-[1px] hover:text-blue-700 border-blue-500 py-3 px-[5vh] hover:border-black"
+          className="w-72 h-fit text-black flex gap-3 items-center justify-around text-lg font-bold mx-5 border-[1px] hover:text-blue-700 border-blue-500 py-3 px-[5vh] hover:border-black"
         >
           <Image
             src="/assets/Images/chat.gif"
@@ -37,7 +37,7 @@ const Footer = () => {
         </a>
         <a
           href="mailto:devemmanuel1@gmail.com"
-          className="w-fit h-fit text-black flex gap-3 items-center justify-center text-lg font-bold mx-5 border-[1px] py-3 hover:text-blue-700 border-blue-500 px-[5vh] hover:border-black"
+          className="w-72 h-fit text-black flex gap-3 items-center justify-around text-lg font-bold mx-5 border-[1px] py-3 hover:text-blue-700 border-blue-500 px-[5vh] hover:border-black"
         >
           <Image
             src="/assets/Images/mail.gif"
@@ -58,7 +58,7 @@ const Footer = () => {
 
       <ul className="mt-5 flex gap-7 flex-wrap mx-auto">
         <li>
-          <a href="https://github.com/realemmanuel">
+          <a target="_blank" href="https://github.com/realemmanuel">
             <GitHubIcon
               fontSize="large"
               className="text-black hover:text-blue-700"
@@ -66,7 +66,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/taiwoemmanuel/">
+          <a target="_blank" href="https://www.linkedin.com/in/taiwoemmanuel/">
             <LinkedInIcon
               fontSize="large"
               className="text-black hover:text-blue-700"
@@ -74,7 +74,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/thedevemmanuel/">
+          <a target="_blank" href="https://twitter.com/thedevemmanuel/">
             <TwitterIcon
               fontSize="large"
               className="text-black hover:text-blue-700"
@@ -82,7 +82,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/itsdevemmanuel/">
+          <a target="_blank" href="https://www.instagram.com/itsdevemmanuel/">
             <InstagramIcon
               fontSize="large"
               className="text-black hover:text-blue-700"

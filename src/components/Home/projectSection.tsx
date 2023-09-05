@@ -10,30 +10,32 @@ const ProjectSection = () => {
         Some Things I&apos;ve Built
       </h2>
 
-      <main className="w-full mt-[10vh] lg:mx-0 flex flex-col gap-20">
-        {projectsData
-          .filter((data) => data.featuredProjects)
-          .slice(0, 3)
-          .map((data) => (
-            <Project
-              key={data.id}
-              id={data.id}
-              featuredProjects={data.featuredProjects}
-              title={data.title}
-              description={data.description}
-              techStack={data.techStack}
-              liveLink={data.liveLink}
-              githubRepo={data.githubRepo}
-              coverImg={data.coverImg}
-            />
-          ))}
+      <main className="w-full mt-[10vh] lg:mx-0 flex flex-col gap-10">
+        <section className="w-full mt-[10vh] lg:mx-0 flex flex-col gap-[5rem] xl:gap-[10rem]">
+          {projectsData
+            .filter((data) => data.featuredProjects)
+            .slice(0, 3)
+            .map((data) => (
+              <Project
+                key={data.id}
+                id={data.id}
+                featuredProjects={data.featuredProjects}
+                title={data.title}
+                description={data.description}
+                techStack={data.techStack}
+                liveLink={data.liveLink}
+                githubRepo={data.githubRepo}
+                coverImg={data.coverImg}
+              />
+            ))}
+        </section>
 
         <Link
           href="/projects"
           target="_blank"
           className="w-fit h-fit px-5 py-3 border-[1px] border-blue-700 text-blue-700 text-md text-center mx-auto hover:bg-blue-700 hover:text-white transition-all duration-300"
         >
-          View More Projects
+          View All Projects
         </Link>
       </main>
     </section>
