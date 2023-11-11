@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import Head from "next/head";
 import HeroSection from "../components/Home/HeroSection";
 import ScrollDetector from "../components/ScrollDetector";
-import AboutSection from "../components/Home/AboutSection";
+import AboutSection from "../components/Home/aboutSection";
 import Featured from "../components/Featured";
 
 export default function Home() {
