@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 
 interface TechStackProps {
-  key: number;
   name: string;
   logo: string;
 }
@@ -10,7 +9,7 @@ interface TechStackProps {
 const TechStack = (props: TechStackProps) => {
   const { name, logo } = props;
   return (
-    <div className="bg-slate-50  p-4 cursor-pointer rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:shadow-blue-500 transition-all">
+    <div className="bg-slate-50 w-fit h-fit p-4 cursor-pointer rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:shadow-blue-500 transition-all">
       <Image
         src={logo}
         width={10}

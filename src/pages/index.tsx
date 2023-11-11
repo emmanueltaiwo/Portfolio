@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout";
 import Head from "next/head";
-import LandingPage from "../components/Home/landingPage";
-import ScrollDetector from "../components/UI/scrollDetector";
-import AboutSection from "../components/Home/aboutSection";
-import ProjectSection from "../components/Home/projectSection";
-import dynamic from "next/dynamic";
+import HeroSection from "../components/Home/HeroSection";
+import ScrollDetector from "../components/ScrollDetector";
+import AboutSection from "../components/Home/AboutSection";
+import Featured from "../components/Featured";
 
 export default function Home() {
   const [userHasScroll, setUserHasScroll] = useState(false);
@@ -72,9 +71,9 @@ export default function Home() {
 
       <Layout userHasScroll={userHasScroll}>
         <ScrollDetector onScroll={handleUserScroll} />
-        <LandingPage />
+        <HeroSection />
         <AboutSection />
-        <ProjectSection />
+        <Featured />
       </Layout>
     </>
   );

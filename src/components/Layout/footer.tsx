@@ -1,95 +1,68 @@
-import React, { useRef } from "react";
-import Image from "next/image";
+import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import Link from "next/link";
 
 const Footer = () => {
-  const contactRef = useRef(null);
   return (
     <footer
-      className="w-full bg-white text-center relative bottom-0 h-[100vh] justify-center flex gap-10 flex-col"
+      className="w-full bg-white relative bottom-0 mt-auto h-[35vh] shadow-2xl shadow-slate-800 py-10 justify-center md:justify-between flex flex-col md:flex-row gap-10"
       id="contact"
-      ref={contactRef}
     >
-      <h1 className="text-black text-[40px] md:text-[70px] md:tracking-wider font-bold">
-        Get In Touch
-      </h1>
-      <p className="text-black mx-5 md:mx-auto md:w-[600px] text-[15px] md:text-[20px]">
-        I&apos;m currently looking for opportunities. Whether its a Full-Time
-        Job or a Freelance work. Send me a message, I&apos;ll try to get back to
-        you as soon as possible.
-      </p>
-      <div className="w-full mx-auto flex flex-col md:flex-row items-center justify-center gap-5">
-        <a
-          href="https://wa.me/2348127984099?text=Hello%20Emmanuel%2C%20I%20just%20visited%20your%20portfolio%20and%20i%20want%20to%20discuss%20with%20you%20about%20some%20opportunities."
-          className="w-72 h-fit text-black flex gap-3 items-center justify-around text-lg font-bold mx-5 border-[1px] hover:text-blue-700 border-blue-500 py-3 px-[5vh] hover:border-black"
-        >
-          <Image
-            src="/assets/Images/chat.gif"
-            height={50}
-            width={50}
-            alt="Mail Gif"
-            className="my-auto"
-          />
-          <span className="text-[20px]">Whatsapp</span>
-        </a>
+      <div className="mx-[5vh] lg:ml-[15vh] xl:ml-[26vh] md:mt-[8vh]">
+        <Link href="/" className="text-[25px] text-slate-800 font-[400]">
+          Emmanuel
+        </Link>
+      </div>
+      <div className="mx-[5vh] mr-[40%] md:mt-[8vh] flex flex-col gap-4 items-start">
+        <p className="text-[17px] font-[320] text-black">Personal email</p>
         <a
           href="mailto:devemmanuel1@gmail.com"
-          className="w-72 h-fit text-black flex gap-3 items-center justify-around text-lg font-bold mx-5 border-[1px] py-3 hover:text-blue-700 border-blue-500 px-[5vh] hover:border-black"
+          className="text-[17px] font-[320] text-black"
         >
-          <Image
-            src="/assets/Images/mail.gif"
-            height={50}
-            width={50}
-            alt="Mail Gif"
-            className="my-auto"
-          />
-          <span className="text-[20px]">Send A Mail</span>
+          devemmanuel1@gmail.com
         </a>
-      </div>
-      <a
-        href="mailto:devemmanuel1@gmail.com"
-        className="text-lg text-slate-500 hover:text-blue-700"
-      >
-        devemmanuel1@gmail.com
-      </a>
 
-      <ul className="mt-5 flex gap-7 flex-wrap mx-auto">
-        <li>
-          <a target="_blank" href="https://github.com/realemmanuel">
-            <GitHubIcon
-              fontSize="large"
-              className="text-black hover:text-blue-700"
-            />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://www.linkedin.com/in/taiwoemmanuel/">
-            <LinkedInIcon
-              fontSize="large"
-              className="text-black hover:text-blue-700"
-            />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://twitter.com/thedevemmanuel/">
-            <TwitterIcon
-              fontSize="large"
-              className="text-black hover:text-blue-700"
-            />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://www.instagram.com/itsdevemmanuel/">
-            <InstagramIcon
-              fontSize="large"
-              className="text-black hover:text-blue-700"
-            />
-          </a>
-        </li>
-      </ul>
+        <ul className="mt-5 flex gap-7 flex-wrap">
+          <li>
+            <a target="_blank" href="https://github.com/realemmanuel">
+              <GitHubIcon
+                fontSize="medium"
+                className="text-black hover:text-slate-700"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/taiwoemmanuel/"
+            >
+              <LinkedInIcon
+                fontSize="medium"
+                className="text-black hover:text-slate-700"
+              />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/thedevemmanuel/">
+              <TwitterIcon
+                fontSize="medium"
+                className="text-black hover:text-slate-700"
+              />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/itsdevemmanuel/">
+              <InstagramIcon
+                fontSize="medium"
+                className="text-black hover:text-slate-700"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   );
 };

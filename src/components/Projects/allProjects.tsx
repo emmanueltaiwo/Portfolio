@@ -1,7 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
-import { projectsData, projectTechStackList } from "../db/projectsData";
+import {
+  projectsData,
+  projectTechStackList,
+} from "../../database/projectsData";
 import FlipMove from "react-flip-move";
 import Project from "./project";
 

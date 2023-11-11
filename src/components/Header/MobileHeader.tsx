@@ -7,7 +7,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 
 interface MobileNavProps {
   handleMenuOpen: () => void;
@@ -20,9 +19,12 @@ const MobileNav = (props: MobileNavProps) => {
 
   return (
     <nav className="md:hidden block my-auto mr-[5vh] z-[1000px]">
-      <div onClick={handleMenuOpen}>
-        <MenuIcon fontSize="large" className="text-black hover:text-blue-700" />
-      </div>
+      <button onClick={handleMenuOpen}>
+        <MenuIcon
+          fontSize="large"
+          className="text-black hover:text-slate-700"
+        />
+      </button>
 
       <AnimatePresence>
         {menuIsOpen && (
@@ -32,17 +34,26 @@ const MobileNav = (props: MobileNavProps) => {
             exit={{ x: "100%" }}
             className="bg-white h-screen w-screen fixed top-0 bottom-0 left-0 right-0 z-[1000px] text-left transition-all duration-200 flex flex-col items-center"
           >
-            <div
-              className="w-full text-right mr-[10vh] mt-[2vh] bg-none"
-              onClick={handleMenuClose}
-            >
-              <CloseIcon
-                fontSize="large"
-                className="text-black hover:text-blue-700"
-              />
+            <div className="w-full flex h-[13vh] items-center justify-between">
+              <Link
+                href="/"
+                className="w-full text-left ml-[5vh] text-[23px] text-slate-800 font-[400]"
+              >
+                Emmanuel
+              </Link>
+
+              <button
+                className="w-full text-right mr-[5vh]"
+                onClick={handleMenuClose}
+              >
+                <CloseIcon
+                  fontSize="large"
+                  className="text-black hover:text-blue-700"
+                />
+              </button>
             </div>
 
-            <ul className="mt-[10vh] w-full flex flex-col gap-8 text-center font-roboto">
+            <ul className="mt-[30%] w-full flex flex-col gap-16 text-center font-roboto">
               <li className="my-auto">
                 <Link
                   className="text-black text-[25px] hover:text-blue-700 transition-all duration-200 my-auto font-bold"
@@ -55,7 +66,7 @@ const MobileNav = (props: MobileNavProps) => {
               <li className="my-auto">
                 <Link
                   className="text-black text-[25px] hover:text-blue-700 transition-all duration-200 my-auto font-bold"
-                  href="/#projects"
+                  href="/projects"
                   onClick={handleMenuClose}
                 >
                   Projects
@@ -70,15 +81,6 @@ const MobileNav = (props: MobileNavProps) => {
                   Contact
                 </Link>
               </li>
-              {/* <li className="my-auto">
-                <Link
-                  className="text-white text-[25px] hover:text-blue-700 hover:bg-gray-200 hover:shadow-gray-500 hover:shadow-md transition-all duration-200 w-fit h-fit px-16 py-2 bg-blue-700 rounded-md my-auto font-bold"
-                  href="/blog"
-                  onClick={handleMenuClose}
-                >
-                  Blog
-                </Link>
-              </li> */}
 
               <ul className="mt-5 flex gap-7 flex-wrap mx-auto">
                 <li>
@@ -111,26 +113,6 @@ const MobileNav = (props: MobileNavProps) => {
                       fontSize="large"
                       className="text-black hover:text-blue-700"
                     />
-                  </a>
-                </li>
-              </ul>
-
-              <hr className="border-gray-500 border-[1px]" />
-
-              <ul className="flex gap-5 flex-col mx-auto w-full">
-                <li>
-                  <a
-                    href="mailto:devemmanuel1@gmail.com"
-                    className="w-[90%] bg-white flex gap-3 items-center justify-center text-lg font-bold mx-5 border-[1px] border-blue-500 py-2 hover:border-black"
-                  >
-                    <Image
-                      src="/assets/Images/mail.gif"
-                      height={50}
-                      width={50}
-                      alt="Mail Gif"
-                      className="my-auto"
-                    />
-                    <span>Say Hello</span>
                   </a>
                 </li>
               </ul>

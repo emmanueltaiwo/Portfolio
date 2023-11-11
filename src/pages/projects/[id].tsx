@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ScrollDetector from "../../components/UI/scrollDetector";
-import { projectsData } from "../../components/db/projectsData";
+import ScrollDetector from "../../components/ScrollDetector";
+import { projectsData } from "../../database/projectsData";
 import { useRouter } from "next/router";
 import Layout from "../../components/Layout";
 import Head from "next/head";
@@ -102,7 +102,9 @@ const ProjectDetails = () => {
 
       <Layout userHasScroll={userHasScroll}>
         <ScrollDetector onScroll={handleUserScroll} />
-        <ProjectDetailsContent filteredProjectData={filteredProjectData} />
+        <div className="pb-20">
+          <ProjectDetailsContent filteredProjectData={filteredProjectData} />
+        </div>
       </Layout>
     </>
   );

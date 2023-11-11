@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 interface DetectorProps {
   onScroll: (hasScroll: boolean) => void;
@@ -7,7 +7,7 @@ interface DetectorProps {
 const ScrollDetector = (props: DetectorProps) => {
   const { onScroll } = props;
 
-  const handleScroll = () => {
+  const handleScroll: any = () => {
     const scrollY = window.scrollY;
     onScroll(scrollY > 0);
   };

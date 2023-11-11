@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ScrollDetector from "../../components/UI/scrollDetector";
+import ScrollDetector from "../../components/ScrollDetector";
 import Layout from "../../components/Layout";
 import AllProjects from "../../components/Projects/allProjects";
 import Head from "next/head";
@@ -95,7 +95,9 @@ const Projects = () => {
 
       <Layout userHasScroll={userHasScroll}>
         <ScrollDetector onScroll={handleUserScroll} />
-        <AllProjects />
+        <div className="pb-20">
+          <AllProjects />
+        </div>
       </Layout>
     </>
   );

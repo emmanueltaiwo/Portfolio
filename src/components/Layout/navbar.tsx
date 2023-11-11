@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import DesktopNav from "../Header/desktopNav";
-import MobileNav from "../Header/mobileNav";
+import DesktopNav from "../Header/DesktopHeader";
+import MobileNav from "../Header/MobileHeader";
 import Link from "next/link";
 
-interface navBarProps {
+interface NavBarProps {
   userHasScroll: boolean;
 }
 
-const Navbar = (props: navBarProps) => {
+const Navbar = (props: NavBarProps) => {
   const { userHasScroll } = props;
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [scrollingUp, setScrollingUp] = useState(false);
@@ -21,6 +20,14 @@ const Navbar = (props: navBarProps) => {
   const handleMenuClose = () => {
     setMenuIsOpen(false);
   };
+
+  const isScrollingUp = scrollingUp
+    ? "bg-white w-full h-[7rem] fixed top-0 z-20 shadow-gray-300 shadow-md flex justify-between translate-y-0 transition-all duration-500"
+    : "bg-white w-full fixed top-0 z-20 flex justify-between -translate-y-20 transition-all duration-500";
+
+  const headerStyles = userHasScroll
+    ? isScrollingUp
+    : "bg-white w-full h-[7rem] fixed top-0 z-20 flex justify-between translate-y-0";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,25 +45,13 @@ const Navbar = (props: navBarProps) => {
 
   return (
     <div>
-      <header
-        className={`${
-          userHasScroll
-            ? scrollingUp
-              ? "bg-white w-full h-[4rem] fixed top-0 z-20 shadow-gray-300 shadow-md flex justify-between translate-y-0 transition-all duration-500"
-              : "bg-white w-full h-[4rem] fixed top-0 z-20 flex justify-between -translate-y-20 transition-all duration-500"
-            : "bg-white w-full h-[4rem] fixed top-0 z-20 flex justify-between translate-y-0"
-        }`}
-      >
-        <div className="my-auto sm:ml-[3vh] md:ml-[3vh] lg:mx-20 xl:ml-16">
-          <Link href="/">
-            <Image
-              src="/assets/Images/logo.png"
-              width={60}
-              height={60}
-              className="w-full"
-              alt="My Logo"
-              priority
-            />
+      <header className={headerStyles}>
+        <div className="my-auto ml-[5vh] lg:ml-[15vh] xl:ml-[25vh]">
+          <Link
+            href="/"
+            className="text-[23px] md:text-[30px] text-slate-800 font-[400]"
+          >
+            Emmanuel
           </Link>
         </div>
         <DesktopNav />
