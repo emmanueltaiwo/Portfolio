@@ -14,13 +14,13 @@ const HeroSection = () => {
   };
 
   return (
-    <main className="w-full h-fit py-10 mt-14 md:mt-[8rem] flex gap-20 flex-col">
-      <div className="flex flex-col gap-4  lg:ml-[15vh] xl:mx-[25vh] mx-[5vh] sm:mx-10 lg:mt-0 mt-10">
+    <main className="w-full h-fit py-10 mt-20 md:mt-[8rem] flex gap-20 flex-col">
+      <div className="flex flex-col gap-4  lg:ml-[15vh] xl:mx-[25vh] mx-5 sm:mx-10 lg:mt-0 mt-10">
         <motion.h1
           variants={textVariants}
           initial="hidden"
           animate="visible"
-          className="text-[40px] lg:text-[80px] xl:text-[90px] sm:text-[70px] font-[600]"
+          className="text-[35px] lg:text-[80px] xl:text-[90px] sm:text-[70px] font-[600]"
         >
           Emmanuel Taiwo
         </motion.h1>

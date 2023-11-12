@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ScrollDetector from "../../components/ScrollDetector";
 import Layout from "../../components/Layout";
-import AllProjects from "../../components/Projects/allProjects";
+import AllProjects from "../../components/Projects/ProjectGallery";
 import Head from "next/head";
 
 const Projects = () => {
@@ -95,7 +95,7 @@ const Projects = () => {
 
       <Layout userHasScroll={userHasScroll}>
         <ScrollDetector onScroll={handleUserScroll} />
-        <div className="pb-20">
+        <div className="py-10 pb-[10rem]">
           <AllProjects />
         </div>
       </Layout>

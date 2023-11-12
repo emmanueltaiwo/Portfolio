@@ -2,6 +2,7 @@ import React from "react";
 import PersonalBio from "../PersonalBio";
 import { techStackList } from "../../database/techStackData";
 import TechStack from "../TechStack";
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   const textVariants = {
@@ -15,15 +16,18 @@ const AboutSection = () => {
 
   return (
     <section
-      className="w-full bg-white h-full py-10 pb-[20vh] flex gap-5 flex-col xl:flex-row justify-around xl:justify-between"
+      className="mt-20 w-full bg-none h-full py-10 pb-[20vh] flex gap-5 flex-col justify-around xl:justify-between"
       id="about"
     >
       <PersonalBio textVariants={textVariants} />
-      <article className="tems-center md:mx-10 xl:mx-[20vh] lg:mx-[15vh] mt-[5vh] mx-5 flex flex-wrap gap-10">
+      <motion.div
+        variants={textVariants}
+        initial="hidden"
+        animate="visible" className="tems-center md:mx-10 xl:mx-[25vh] lg:mx-[15vh] mt-[5vh] mx-5 flex flex-wrap gap-10">
         {techStackList.map((data) => (
           <TechStack name={data.name} logo={data.logo} key={data.id} />
         ))}
-      </article>
+      </motion.div>
     </section>
   );
 };

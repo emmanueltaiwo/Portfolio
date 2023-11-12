@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -17,8 +17,20 @@ interface MobileNavProps {
 const MobileNav = (props: MobileNavProps) => {
   const { handleMenuOpen, handleMenuClose, menuIsOpen } = props;
 
+  useEffect(() => {
+    if (menuIsOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [menuIsOpen]);
+
   return (
-    <nav className="md:hidden block my-auto mr-[5vh] z-[1000px]">
+    <nav className="md:hidden block my-auto mr-5 z-[1000px]">
       <button onClick={handleMenuOpen}>
         <MenuIcon
           fontSize="large"
@@ -37,13 +49,13 @@ const MobileNav = (props: MobileNavProps) => {
             <div className="w-full flex h-[13vh] items-center justify-between">
               <Link
                 href="/"
-                className="w-full text-left ml-[5vh] text-[23px] text-slate-800 font-[400]"
+                className="w-full text-left ml-5 text-[23px] text-slate-800 font-[400]"
               >
                 Emmanuel
               </Link>
 
               <button
-                className="w-full text-right mr-[5vh]"
+                className="w-full text-right mr-5"
                 onClick={handleMenuClose}
               >
                 <CloseIcon
@@ -57,7 +69,7 @@ const MobileNav = (props: MobileNavProps) => {
               <li className="my-auto">
                 <Link
                   className="text-black text-[25px] hover:text-blue-700 transition-all duration-200 my-auto font-bold"
-                  href="/#about"
+                  href="/about"
                   onClick={handleMenuClose}
                 >
                   About

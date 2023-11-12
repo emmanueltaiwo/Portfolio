@@ -5,7 +5,7 @@ interface ProjectFeatureProps {
   description: string;
 }
 
-const ProjectFeature = (props: ProjectFeatureProps) => {
+const SingleFeature = (props: ProjectFeatureProps) => {
   const { title, description } = props;
   return (
     <li className="bg-gray-50 shadow-gray-500 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer p-5 rounded-md flex flex-col">
@@ -13,9 +13,9 @@ const ProjectFeature = (props: ProjectFeatureProps) => {
         {title}
       </h3>
       <hr className="border-slate-800 py-3" />
-      <p className="text-slate-500 text-[15px] font-medium">{description}</p>
+      <p className="text-slate-500 text-[15px] font-[400]">{description}</p>
     </li>
   );
 };
 
-export default ProjectFeature;
+export default SingleFeature;

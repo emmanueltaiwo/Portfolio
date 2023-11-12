@@ -22,7 +22,7 @@ const PersonalBio = (props: AboutSectionLeftProps) => {
         variants={textVariants}
         initial="hidden"
         animate="visible"
-        className="lg:w-full font-roboto xl:w-[400px] text-[16.5px] md:text-[18px] text-slate-800 mt-[5vh]"
+        className="w-full font-roboto text-[16.5px] md:text-[18px] text-slate-800 mt-[5vh]"
       >
         👋 Hello! I&apos;m Emmanuel, a passionate frontend developer on a
         mission to turn ideas into beautifully functional web experiences. With

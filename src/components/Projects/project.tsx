@@ -13,6 +13,7 @@ interface ProjectProps {
   liveLink: string;
   githubRepo: string;
   coverImg: string;
+  mainPage: boolean;
 }
 
 const Project = (props: ProjectProps) => {
@@ -25,31 +26,34 @@ const Project = (props: ProjectProps) => {
     liveLink,
     githubRepo,
     coverImg,
+    mainPage,
   } = props;
   return (
-    <div className="w-[90%] xl:mx-20 lg:mx-10 mx-5 flex flex-col-reverse md:flex-row items-center md:gap-3  relative shadow-lg border md:border-none md:shadow-none rounded ">
-      <div className="w-full md:w-2/3 lg:w-1/2 z-10 bg-slate-50 md:bg-transparent py-5 md:mt-5">
+    <div className="lg:w-[70%] w-[90%] lg:ml-[15vh] xl:ml-[25vh] mx-5 flex flex-col-reverse items-center shadow-lg border rounded ">
+      <div className="w-full z-10 bg-slate-50 md:bg-none py-5 rounded-b-md">
         <article className="p-4">
           {featuredProjects && (
-            <p className="font-roboto text-lg pb-1 text-blue-500 md:px-4">
-              Featured Project
+            <p className="font-roboto text-lg pb-1 text-slate-500 md:px-4">
+              Top Pick
             </p>
           )}
 
           <h2 className="text-2xl md:px-4 text-slate-700 font-bold">{title}</h2>
         </article>
-        <article className="md:bg-blue-500 md:my-5 text-slate-700 md:text-white p-4 rounded md:shadow-lg">
+        <article className="md:bg-slate-500 md:my-5 text-slate-700 md:text-white p-4 md:shadow-lg">
           <p className="pb-4 text-md">
             {description}{" "}
-            <Link
-              href={`/projects/${id}/?title=${encodeURIComponent(title)}`}
-              className="text-blue-700 hover:text-blue-900 underline md:text-gray-300 md:hover:text-black"
-            >
-              Read More
-            </Link>
+            {!mainPage && (
+              <Link
+                href={`/projects/${id}/?title=${encodeURIComponent(title)}`}
+                className="text-blue-700 hover:text-blue-900 underline md:text-gray-300 md:hover:text-black"
+              >
+                View Details
+              </Link>
+            )}
           </p>
         </article>
-        <article className="lg:w-8/12 flex flex-wrap text-xs rounded text-slate-600 gap-x-8 gap-y-4 font-roboto px-4">
+        <article className="w-full flex flex-wrap text-xs rounded text-slate-600 gap-x-8 gap-y-4 font-roboto px-4">
           {techStack.map((stack) => (
             <span
               key={stack}
@@ -76,13 +80,13 @@ const Project = (props: ProjectProps) => {
           </a>
         </article>
       </div>
-      <div className="w-full h-full md:w-2/3 md:absolute top-0 md:top-auto left-0 md:left-auto md:right-0 flex items-start p-4 md:p-0 bg-slate-50 border-b md:border-none md:bg-transparent">
+      <div className="w-full h-full flex items-start bg-slate-50 border-b md:border-none md:bg-transparent">
         <Image
           src={coverImg}
-          width={300}
-          height={300}
+          width={1000}
+          height={1000}
           alt="Project Image"
-          className="w-full h-full md:h-auto object-cover md:shadow-xl md:rounded-lg"
+          className="w-full h-full md:h-auto object-cover md:shadow-xl md:rounded-t-lg"
           priority
         />
       </div>

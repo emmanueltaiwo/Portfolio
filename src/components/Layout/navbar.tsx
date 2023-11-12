@@ -22,12 +22,12 @@ const Navbar = (props: NavBarProps) => {
   };
 
   const isScrollingUp = scrollingUp
-    ? "bg-white w-full h-[7rem] fixed top-0 z-20 shadow-gray-300 shadow-md flex justify-between translate-y-0 transition-all duration-500"
-    : "bg-white w-full fixed top-0 z-20 flex justify-between -translate-y-20 transition-all duration-500";
+    ? "bg-[rgba(236,236,236)] w-full h-[7rem] fixed top-0 z-20 flex justify-between translate-y-0 transition-all duration-500"
+    : "bg-[rgba(236,236,236] w-full fixed top-0 z-20 flex justify-between -translate-y-20 transition-all duration-500";
 
   const headerStyles = userHasScroll
     ? isScrollingUp
-    : "bg-white w-full h-[7rem] fixed top-0 z-20 flex justify-between translate-y-0";
+    : "bg-transparent w-full h-[7rem] fixed top-0 z-20 flex justify-between translate-y-0";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,7 +46,7 @@ const Navbar = (props: NavBarProps) => {
   return (
     <div>
       <header className={headerStyles}>
-        <div className="my-auto ml-[5vh] lg:ml-[15vh] xl:ml-[25vh]">
+        <div className="my-auto ml-5 lg:ml-[15vh] xl:ml-[25vh]">
           <Link
             href="/"
             className="text-[23px] md:text-[30px] text-slate-800 font-[400]"

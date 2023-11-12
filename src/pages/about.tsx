@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout";
-import Head from "next/head";
-import HeroSection from "../components/Home/HeroSection";
 import ScrollDetector from "../components/ScrollDetector";
-import Featured from "../components/Featured";
+import Head from "next/head";
+import AboutSection from "../components/About/AboutSection";
 
-export default function Home() {
+const About = () => {
   const [userHasScroll, setUserHasScroll] = useState(false);
 
   const handleUserScroll = (hasScroll: boolean) => {
     setUserHasScroll(hasScroll);
   };
-
   return (
     <>
       <Head>
@@ -64,15 +62,16 @@ export default function Home() {
         {/* Keywords */}
         <meta
           name="keywords"
-          content="emmanuel, emmanuel taiwo, emmanuel taiwo oluwafunso, frontend developer, web development, React, JavaScript, software engineer"
+          content="emmanuel, about emmanuel taiwo, emmanuel taiwo, emmanuel taiwo oluwafunso, frontend developer, web development, React, JavaScript, software engineer"
         />
       </Head>
 
       <Layout userHasScroll={userHasScroll}>
         <ScrollDetector onScroll={handleUserScroll} />
-        <HeroSection />
-        <Featured />
+        <AboutSection />
       </Layout>
     </>
   );
-}
+};
+
+export default About;

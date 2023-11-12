@@ -8,7 +8,7 @@ const DesktopNav = () => {
         <li className="my-auto">
           <Link
             className="text-black text-[17px] hover:text-slate-700 transition-all duration-200 my-auto font-[100]"
-            href="/#about"
+            href="/about"
           >
             About
           </Link>

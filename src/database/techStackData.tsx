@@ -69,4 +69,14 @@ export const techStackList = [
     name: "FIREBASE",
     logo: "/assets/Images/firebase.svg",
   },
+  {
+    id: 15,
+    name: "NODEJS",
+    logo: "/assets/Images/nodejs.svg",
+  },
+  {
+    id: 16,
+    name: "GRAPHQL",
+    logo: "/assets/Images/graphql.svg",
+  },
 ];

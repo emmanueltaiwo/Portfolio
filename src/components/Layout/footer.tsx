@@ -8,15 +8,15 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer
-      className="w-full bg-white relative bottom-0 mt-auto h-[35vh] shadow-2xl shadow-slate-800 py-10 justify-center md:justify-between flex flex-col md:flex-row gap-10"
+      className="w-full bg-white relative bottom-0 mt-auto h-[35vh] py-10 justify-center md:justify-between flex flex-col md:flex-row gap-10"
       id="contact"
     >
-      <div className="mx-[5vh] lg:ml-[15vh] xl:ml-[26vh] md:mt-[8vh]">
+      <div className="mx-5 lg:ml-[15vh] xl:ml-[25vh] md:mt-[8vh]">
         <Link href="/" className="text-[25px] text-slate-800 font-[400]">
           Emmanuel
         </Link>
       </div>
-      <div className="mx-[5vh] mr-[40%] md:mt-[8vh] flex flex-col gap-4 items-start">
+      <div className="mx-5 mr-[40%] md:mt-[8vh] flex flex-col gap-4 items-start">
         <p className="text-[17px] font-[320] text-black">Personal email</p>
         <a
           href="mailto:devemmanuel1@gmail.com"

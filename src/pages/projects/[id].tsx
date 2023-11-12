@@ -4,11 +4,15 @@ import { projectsData } from "../../database/projectsData";
 import { useRouter } from "next/router";
 import Layout from "../../components/Layout";
 import Head from "next/head";
-import ProjectDetailsContent from "../../components/Projects/projectDetailsContent";
+import ProjectHeader from "../../components/Projects/ProjectHeader";
+import ProjectFeatures from "../../components/Projects/ProjectFeatures";
+import ProjectChallenges from "../../components/Projects/ProjectChallenges";
+import ProjectResult from "../../components/Projects/ProjectResult";
+import { motion } from "framer-motion";
 
 const ProjectDetails = () => {
   const router = useRouter();
-  const { id } = router.query; // Get the Project title from the query parameter
+  const { id } = router.query;
   const [userHasScroll, setUserHasScroll] = useState(false);
 
   const handleUserScroll = (hasScroll: boolean) => {
@@ -17,6 +21,15 @@ const ProjectDetails = () => {
   const filteredProjectData = projectsData.filter(
     (data) => data.id.toString() === id
   );
+
+  const textVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { delay: 0.2, duration: 0.8 },
+    },
+  };
 
   return (
     <>
@@ -102,9 +115,17 @@ const ProjectDetails = () => {
 
       <Layout userHasScroll={userHasScroll}>
         <ScrollDetector onScroll={handleUserScroll} />
-        <div className="pb-20">
-          <ProjectDetailsContent filteredProjectData={filteredProjectData} />
-        </div>
+        <motion.div
+          variants={textVariants}
+          initial="hidden"
+          animate="visible"
+          className="py-20"
+        >
+          <ProjectHeader filteredProjectData={filteredProjectData} />
+          <ProjectFeatures filteredProjectData={filteredProjectData} />
+          <ProjectChallenges filteredProjectData={filteredProjectData} />
+          <ProjectResult filteredProjectData={filteredProjectData} />
+        </motion.div>
       </Layout>
     </>
   );
