@@ -3,7 +3,6 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Image from "next/image";
 import Link from "next/link";
-
 interface ProjectProps {
   id: number;
   featuredProjects: boolean;
