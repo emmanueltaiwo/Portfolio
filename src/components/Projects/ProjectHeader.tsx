@@ -8,7 +8,7 @@ interface ProjectDetailsHeaderProps {
 const ProjectHeader = (props: ProjectDetailsHeaderProps) => {
   const { filteredProjectData } = props;
   return (
-    <section className="bg-transparent mt-[5vh] md:mt-[13vh] py-5 h-full md:h-screen w-full">
+    <section className="bg-transparent mt-[5vh] md:mt-[13vh] py-5 w-full">
       <h1 className="py-5 lg:p-0 xl:mx-[25vh] lg:mx-[15vh] text-[40px] md:text-[50px] xl:text-[70px] text-slate-800 font-bold mx-5">
         Project Info
       </h1>

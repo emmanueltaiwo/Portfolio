@@ -28,7 +28,7 @@ const Project = (props: ProjectProps) => {
     mainPage,
   } = props;
   return (
-    <div className="lg:w-[70%] w-[90%] lg:ml-[15vh] xl:ml-[25vh] mx-5 flex flex-col-reverse items-center shadow-lg border rounded ">
+    <div className="lg:w-[70%] xl:ml-[25vh] lg:ml-[15vh] w-[90%] mx-5 flex flex-col-reverse items-center shadow-lg border rounded ">
       <div className="w-full z-10 bg-slate-50 md:bg-none py-5 rounded-b-md">
         <article className="p-4">
           {featuredProjects && (

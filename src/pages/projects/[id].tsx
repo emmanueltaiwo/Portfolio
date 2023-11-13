@@ -119,7 +119,7 @@ const ProjectDetails = () => {
           variants={textVariants}
           initial="hidden"
           animate="visible"
-          className="py-20"
+          className="py-20 flex flex-col gap-10"
         >
           <ProjectHeader filteredProjectData={filteredProjectData} />
           <ProjectFeatures filteredProjectData={filteredProjectData} />
