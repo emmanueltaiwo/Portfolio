@@ -4,7 +4,7 @@ Welcome to my personal portfolio repository! This repository serves as a showcas
 
 🚀 **About Me**
 
-I'm Emmanuel Taiwo, a passionate Front End Web Developer based in Lagos, Nigeria. With a strong foundation in web technologies and a keen eye for design, I'm dedicated to crafting elegant and user-centric web experiences.
+I'm Emmanuel Taiwo, a passionate Front End Engineer based in Lagos, Nigeria. With a strong foundation in web technologies and a keen eye for design, I'm dedicated to crafting elegant and user-centric web experiences.
 
 🛠️ **Skills**
 
@@ -13,8 +13,6 @@ Here are some of the skills and technologies I specialize in:
 - Frontend Development with **Next.js**, **React.js**, and **JavaScript/TypeScript**
 - Building responsive and stylish interfaces with **Tailwind CSS**
 - State management using **Redux**
-- Real-time database and authentication with **Firebase Firestore**
-- Data visualization with **Chart.js**
 - Git version control and collaboration on **GitHub**
 - And more!
 
