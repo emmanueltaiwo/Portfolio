@@ -28,24 +28,24 @@ const Project = (props: ProjectProps) => {
     mainPage,
   } = props;
   return (
-    <div className="lg:w-[70%] xl:ml-[25vh] lg:ml-[15vh] w-[90%] mx-5 flex flex-col-reverse items-center shadow-lg border rounded ">
-      <div className="w-full z-10 bg-slate-50 md:bg-none py-5 rounded-b-md">
+    <div className="lg:w-[70%] xl:ml-[25vh] lg:ml-[15vh] w-[90%] mx-5 flex flex-col-reverse items-center shadow-lg rounded ">
+      <div className="w-full z-10 bg-[#5e18a4] md:bg-none py-5 rounded-b-md">
         <article className="p-4">
           {featuredProjects && (
-            <p className="font-roboto text-lg pb-1 text-slate-500 md:px-4">
+            <p className="font-roboto text-lg pb-1 text-[#defb81] md:px-4">
               Top Pick
             </p>
           )}
 
-          <h2 className="text-2xl md:px-4 text-slate-700 font-bold">{title}</h2>
+          <h2 className="text-2xl md:px-4 text-[#defb81] font-bold">{title}</h2>
         </article>
-        <article className="md:bg-slate-500 md:my-5 text-slate-700 md:text-white p-4 md:shadow-lg">
+        <article className="md:bg-[#e7d3ff] md:my-5 text-[#defb81] md:text-[#201344] p-4 md:shadow-lg">
           <p className="pb-4 text-md">
             {description}{" "}
             {!mainPage && (
               <Link
                 href={`/projects/${id}/?title=${encodeURIComponent(title)}`}
-                className="text-blue-700 hover:text-blue-900 underline md:text-gray-300 md:hover:text-black"
+                className="text-[#defb81] underline md:text-[#201344] md:hover:text-black"
               >
                 View Details
               </Link>
@@ -54,10 +54,7 @@ const Project = (props: ProjectProps) => {
         </article>
         <article className="w-full flex flex-wrap text-xs rounded text-slate-600 gap-x-8 gap-y-4 font-roboto px-4">
           {techStack.map((stack) => (
-            <span
-              key={stack}
-              className="text-slate-500 hover:text-black cursor-pointer"
-            >
+            <span key={stack} className="text-[#defb81] cursor-pointer">
               {stack}
             </span>
           ))}
@@ -66,16 +63,16 @@ const Project = (props: ProjectProps) => {
           <a
             href={liveLink.toString()}
             target="_blank"
-            className="w-fit h-fit border-[1px] rounded-full px-3 py-3 border-gray-500 hover:bg-gray-300"
+            className="w-fit h-fit border-[1px] rounded-full px-3 py-3 border-[#defb81]"
           >
-            <OpenInNewIcon />
+            <OpenInNewIcon className="text-[#defb81]" />
           </a>
           <a
             href={githubRepo}
             target="_blank"
-            className="w-fit h-fit border-[1px] rounded-full px-3 py-3 border-gray-500 hover:bg-gray-300"
+            className="w-fit h-fit border-[1px] rounded-full px-3 py-3 border-[#defb81]"
           >
-            <GitHubIcon />
+            <GitHubIcon className="text-[#defb81]" />
           </a>
         </article>
       </div>

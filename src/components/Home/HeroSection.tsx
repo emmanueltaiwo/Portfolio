@@ -20,7 +20,7 @@ const HeroSection = () => {
           variants={textVariants}
           initial="hidden"
           animate="visible"
-          className="text-[35px] lg:text-[80px] xl:text-[90px] sm:text-[70px] font-[600]"
+          className="text-[35px] lg:text-[80px] xl:text-[90px] text-[#defb81] sm:text-[70px] font-[600]"
         >
           Emmanuel Taiwo
         </motion.h1>
@@ -28,9 +28,9 @@ const HeroSection = () => {
           variants={textVariants}
           initial="hidden"
           animate="visible"
-          className="md:w-[600px] xl:w-[800px] lg:w-[650px] xl:text-[30px] lg:text-[20px] text-[17px] text-gray-700 font-[500] md:font-[300] xl:leading-[45px]"
+          className="md:w-[600px] xl:w-[800px] lg:w-[650px] xl:text-[30px] lg:text-[20px] text-[17px] text-[#e7d3ff] font-[500] md:font-[300] xl:leading-[40px]"
         >
-          I&apos;m a frontend engineer, turning creative ideas into functioning
+          I&apos;m a software engineer, turning creative ideas into functioning
           applications. I use code to solve problems efficiently.
         </motion.p>
         <motion.a
@@ -40,7 +40,7 @@ const HeroSection = () => {
           href="/assets/documents/Taiwo Emmanuel Resume.pdf"
           download
           target="_blank"
-          className="mt-2 md:mt-5 w-fit h-fit flex gap-3 items-center justify-center text-lg font-[500] md:font-[200] border-[2px] md:border-[1px] hover:border-[2px] py-3 border-black px-14 hover:border-black rounded-md "
+          className="mt-2 md:mt-5 w-fit h-fit flex gap-3 items-center justify-center text-lg font-[500] md:font-[200] border-[2px] md:border-[1px] hover:border-[2px] py-3 border-[#e7d3ff] px-14 text-[#e7d3ff] hover:border-blue-500 rounded-md "
         >
           <CloudDownloadIcon />
           My Resume

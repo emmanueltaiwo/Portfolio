@@ -22,8 +22,8 @@ const Navbar = (props: NavBarProps) => {
   };
 
   const isScrollingUp = scrollingUp
-    ? "bg-[rgba(236,236,236)] w-full h-[7rem] fixed top-0 z-20 flex justify-between translate-y-0 transition-all duration-500"
-    : "bg-[rgba(236,236,236] w-full fixed top-0 z-20 flex justify-between -translate-y-20 transition-all duration-500";
+    ? "bg-[#201344] w-full h-[7rem] fixed top-0 z-20 flex justify-between translate-y-0 transition-all duration-500"
+    : "bg-[#201344] w-full fixed top-0 z-20 flex justify-between -translate-y-20 transition-all duration-500";
 
   const headerStyles = userHasScroll
     ? isScrollingUp
@@ -49,7 +49,7 @@ const Navbar = (props: NavBarProps) => {
         <div className="my-auto ml-5 lg:ml-[15vh] xl:ml-[25vh]">
           <Link
             href="/"
-            className="text-[23px] md:text-[30px] text-slate-800 font-[400]"
+            className="text-[23px] md:text-[20px] text-[#e7d3ff] font-[400]"
           >
             Emmanuel
           </Link>

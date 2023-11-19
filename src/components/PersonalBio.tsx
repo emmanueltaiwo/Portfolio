@@ -13,7 +13,7 @@ const PersonalBio = (props: AboutSectionLeftProps) => {
         variants={textVariants}
         initial="hidden"
         animate="visible"
-        className="text-3xl font-extrabold text-slate-800"
+        className="text-3xl font-extrabold text-[#defb81]"
       >
         About Me
       </motion.h3>
@@ -22,7 +22,7 @@ const PersonalBio = (props: AboutSectionLeftProps) => {
         variants={textVariants}
         initial="hidden"
         animate="visible"
-        className="w-full font-roboto text-[16.5px] md:text-[18px] text-slate-800 mt-[5vh]"
+        className="w-full font-roboto text-[16.5px] md:text-[18px] text-[#e7d3ff] mt-[5vh]"
       >
         👋 Hello! I&apos;m Emmanuel, a passionate frontend developer on a
         mission to turn ideas into beautifully functional web experiences. With

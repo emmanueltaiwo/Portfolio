@@ -32,10 +32,7 @@ const MobileNav = (props: MobileNavProps) => {
   return (
     <nav className="md:hidden block my-auto mr-5 z-[1000px]">
       <button onClick={handleMenuOpen}>
-        <MenuIcon
-          fontSize="large"
-          className="text-black hover:text-slate-700"
-        />
+        <MenuIcon fontSize="large" className="text-[#defb81]" />
       </button>
 
       <AnimatePresence>
@@ -44,12 +41,12 @@ const MobileNav = (props: MobileNavProps) => {
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
-            className="bg-white h-screen w-screen fixed top-0 bottom-0 left-0 right-0 z-[1000px] text-left transition-all duration-200 flex flex-col items-center"
+            className="bg-[#5e18a4] h-screen w-screen fixed top-0 bottom-0 left-0 right-0 z-[1000px] text-left transition-all duration-200 flex flex-col items-center"
           >
             <div className="w-full flex h-[13vh] items-center justify-between">
               <Link
                 href="/"
-                className="w-full text-left ml-5 text-[23px] text-slate-800 font-[400]"
+                className="w-full text-left ml-5 text-[23px] text-[#e7d3ff] font-[400]"
               >
                 Emmanuel
               </Link>
@@ -60,7 +57,7 @@ const MobileNav = (props: MobileNavProps) => {
               >
                 <CloseIcon
                   fontSize="large"
-                  className="text-black hover:text-blue-700"
+                  className="text-[#defb81]"
                 />
               </button>
             </div>
@@ -68,7 +65,7 @@ const MobileNav = (props: MobileNavProps) => {
             <ul className="mt-[30%] w-full flex flex-col gap-16 text-center font-roboto">
               <li className="my-auto">
                 <Link
-                  className="text-black text-[25px] hover:text-blue-700 transition-all duration-200 my-auto font-bold"
+                  className="text-[#defb81] text-[25px] transition-all duration-200 my-auto font-bold"
                   href="/about"
                   onClick={handleMenuClose}
                 >
@@ -77,7 +74,7 @@ const MobileNav = (props: MobileNavProps) => {
               </li>
               <li className="my-auto">
                 <Link
-                  className="text-black text-[25px] hover:text-blue-700 transition-all duration-200 my-auto font-bold"
+                  className="text-[#defb81] text-[25px] transition-all duration-200 my-auto font-bold"
                   href="/projects"
                   onClick={handleMenuClose}
                 >
@@ -86,7 +83,7 @@ const MobileNav = (props: MobileNavProps) => {
               </li>
               <li className="my-auto">
                 <Link
-                  className="text-black text-[25px] hover:text-blue-700 transition-all duration-200 my-auto font-bold"
+                  className="text-[#defb81] text-[25px] transition-all duration-200 my-auto font-bold"
                   href="/#contact"
                   onClick={handleMenuClose}
                 >
@@ -99,7 +96,7 @@ const MobileNav = (props: MobileNavProps) => {
                   <a href="https://github.com/realemmanuel">
                     <GitHubIcon
                       fontSize="large"
-                      className="text-black hover:text-blue-700"
+                      className="text-[#defb81]"
                     />
                   </a>
                 </li>
@@ -107,7 +104,7 @@ const MobileNav = (props: MobileNavProps) => {
                   <a href="https://www.linkedin.com/in/taiwoemmanuel/">
                     <LinkedInIcon
                       fontSize="large"
-                      className="text-black hover:text-blue-700"
+                      className="text-[#defb81]"
                     />
                   </a>
                 </li>
@@ -115,7 +112,7 @@ const MobileNav = (props: MobileNavProps) => {
                   <a href="https://twitter.com/thedevemmanuel/">
                     <TwitterIcon
                       fontSize="large"
-                      className="text-black hover:text-blue-700"
+                      className="text-[#defb81]"
                     />
                   </a>
                 </li>
@@ -123,7 +120,7 @@ const MobileNav = (props: MobileNavProps) => {
                   <a href="https://www.instagram.com/itsdevemmanuel/">
                     <InstagramIcon
                       fontSize="large"
-                      className="text-black hover:text-blue-700"
+                      className="text-[#defb81]"
                     />
                   </a>
                 </li>

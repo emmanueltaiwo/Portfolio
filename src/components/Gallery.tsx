@@ -9,11 +9,6 @@ interface LandingPageContentLeftProps {
 }
 
 const Gallery = ({ textVariants }: LandingPageContentLeftProps) => {
-  const images = [
-    { src: "/assets/Images/spendsense_banner.png", alt: "Spendsense Banner" },
-    { src: "/assets/Images/spendsense_gallery.png", alt: "Spendsense Gallery" },
-  ];
-
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const handleMouseEnter = (index: number) => {
@@ -33,7 +28,7 @@ const Gallery = ({ textVariants }: LandingPageContentLeftProps) => {
     >
       {projectsData.map((data, index) => (
         <div
-          key={index}
+          key={data.id}
           className="relative cursor-pointer transition-all duration-500"
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
@@ -56,14 +51,14 @@ const Gallery = ({ textVariants }: LandingPageContentLeftProps) => {
             >
               <Link
                 href={`/projects/${data.id}`}
-                className="w-[80%] md:w-[35%] lg:w-[50%] xl:w-[35%] text-center h-fit px-14 py-3 bg-white text-black rounded-lg hover:border-[2px] hover:border-blue-800 hover:bg-transparent hover:text-white"
+                className="w-[80%] md:w-[35%] lg:w-[50%] xl:w-[35%] text-center h-fit px-14 py-3 bg-[#5e18a4] text-[#defb81] rounded-lg hover:border-[2px] "
               >
                 View Project
               </Link>
               <a
                 href={data.liveLink}
                 target="_blank"
-                className="w-[80%] md:w-[35%] lg:w-[50%] xl:w-[35%] text-center h-fit px-14 py-3 bg-none border-[2px] border-blue-800 hover:bg-white hover:text-black hover:border-0 text-white rounded-lg"
+                className="w-[80%] md:w-[35%] lg:w-[50%] xl:w-[35%] text-center h-fit px-14 py-3 bg-none border-[2px] border-[#e7d3ff] text-[#e7d3ff] rounded-lg"
               >
                 Live Demo
               </a>

@@ -34,7 +34,7 @@ const AllProjects = () => {
         variants={textVariants}
         initial="hidden"
         animate="visible"
-        className="mx-5 lg:mx-[15vh] xl:mx-[25vh] text-[40px] md:text-[60px] lg:text-[70px] text-slate-800 font-extrabold"
+        className="mx-5 lg:mx-[15vh] xl:mx-[25vh] text-[40px] md:text-[60px] lg:text-[70px] text-[#defb81] font-extrabold"
       >
         View My Work
       </motion.h1>
@@ -42,12 +42,12 @@ const AllProjects = () => {
         variants={textVariants}
         initial="hidden"
         animate="visible"
-        className="lg:w-[50%] md:w-[60%] w-[80%] border-b-[1px]  border-slate-800 gap-5 lg:mx-[15vh] mx-5 xl:mx-[25vh] mt-5 flex items-center"
+        className="lg:w-[50%] md:w-[60%] w-[80%] border-b-[1px]  border-[#defb81] gap-5 lg:mx-[15vh] mx-5 xl:mx-[25vh] mt-5 flex items-center"
       >
-        <SavedSearchIcon className="ml-5" />
+        <SavedSearchIcon className="ml-5 text-[#e7d3ff]" />
         <input
           type="search"
-          className="w-full mx-auto md:mx-0 bg-transparent py-3 px-3 text-lg outline-none"
+          className="w-full text-[#e7d3ff] placeholder:text-[#e7d3ff] mx-auto md:mx-0 bg-transparent py-3 px-3 text-lg outline-none"
           placeholder="Search For Project By Keywords"
           value={search}
           onChange={handleSearchChange}
