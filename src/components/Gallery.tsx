@@ -24,7 +24,7 @@ const Gallery = ({ textVariants }: LandingPageContentLeftProps) => {
       variants={textVariants}
       initial="hidden"
       animate="visible"
-      className="grid w-full lg:grid-cols-2 grid-cols-1 gap-3"
+      className="grid w-full lg:grid-cols-2 grid-cols-1 gap-5 lg:gap-y-12"
     >
       {projectsData.map((data, index) => (
         <div

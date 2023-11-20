@@ -79,4 +79,39 @@ export const techStackList = [
     name: "GRAPHQL",
     logo: "/assets/Images/graphql.svg",
   },
+  {
+    id: 17,
+    name: "JEST",
+    logo: "/assets/Images/jest.svg",
+  },
+  {
+    id: 18,
+    name: "CYPRESS",
+    logo: "/assets/Images/cypress.svg",
+  },
+  {
+    id: 19,
+    name: "GITLAB",
+    logo: "/assets/Images/gitlab.svg",
+  },
+  {
+    id: 20,
+    name: "AWS",
+    logo: "/assets/Images/aws.svg",
+  },
+  {
+    id: 21,
+    name: "AZURE",
+    logo: "/assets/Images/azure.svg",
+  },
+  {
+    id: 22,
+    name: "DOCKER",
+    logo: "/assets/Images/docker.svg",
+  },
+  {
+    id: 23,
+    name: "KUBERNERTES",
+    logo: "/assets/Images/kubernetes.svg",
+  },
 ];

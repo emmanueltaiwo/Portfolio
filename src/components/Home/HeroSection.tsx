@@ -28,9 +28,9 @@ const HeroSection = () => {
           variants={textVariants}
           initial="hidden"
           animate="visible"
-          className="md:w-[600px] xl:w-[800px] lg:w-[650px] xl:text-[30px] lg:text-[20px] text-[17px] text-[#e7d3ff] font-[500] md:font-[300] xl:leading-[40px]"
+          className="md:w-[600px] xl:w-[800px] lg:w-[650px] xl:text-[30px] lg:text-[20px] text-[17px] text-[#e7d3ff] font-[400] md:font-[300] xl:leading-[40px]"
         >
-          I&apos;m a software engineer, turning creative ideas into functioning
+          I&apos;m a software engineer turning creative ideas into functioning
           applications. I use code to solve problems efficiently.
         </motion.p>
         <motion.a
