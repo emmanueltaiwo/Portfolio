@@ -37,7 +37,7 @@ const Footer = () => {
           <li>
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/taiwoemmanuel/"
+              href="https://www.linkedin.com/in/emmanueloluwafunso/"
             >
               <LinkedInIcon
                 fontSize="medium"
