@@ -36,7 +36,7 @@ const DesktopNav = () => {
             <a target="_blank" href="https://twitter.com/thedevemmanuel/">
               <TwitterIcon
                 fontSize="medium"
-                className="text-[#defb81]0"
+                className="text-[#defb81]"
               />
             </a>
           </li>
