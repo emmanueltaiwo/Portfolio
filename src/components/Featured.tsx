@@ -12,7 +12,7 @@ const Featured = () => {
       <Link
         href="/projects/1?title=SpendSense"
         target="_blank"
-        className="mx-5 lg:mx-[15vh] xl:mx-[25vh] flex items-center text-[15px] sm:text-[18px] font-[400] md:font-[300] gap-1 md:gap-3 text-[#e7d3ff] hover:text-blue-500"
+        className="mx-5 lg:mx-[15vh] xl:mx-[25vh] flex items-center text-[15px] sm:text-[18px] font-[400] md:font-[300] gap-1 md:gap-3 text-[#e7d3ff]"
       >
         View Project
         <EastOutlinedIcon fontSize="medium" />

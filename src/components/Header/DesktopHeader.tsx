@@ -9,7 +9,7 @@ const DesktopNav = () => {
       <ul className="flex gap-10 font-roboto">
         <li className="my-auto">
           <Link
-            className="text-[#e7d3ff] text-[17px] hover:text-blue-500 transition-all duration-200 my-auto font-[100]"
+            className="text-[#e7d3ff] text-[17px] transition-all duration-200 my-auto font-[100]"
             href="/about"
           >
             About
@@ -17,7 +17,7 @@ const DesktopNav = () => {
         </li>
         <li className="my-auto">
           <Link
-            className="text-[#e7d3ff] text-[17px] hover:text-blue-500 transition-all duration-200 my-auto font-[100]"
+            className="text-[#e7d3ff] text-[17px] transition-all duration-200 my-auto font-[100]"
             href="/projects"
           >
             Projects
@@ -25,7 +25,7 @@ const DesktopNav = () => {
         </li>
         <li className="my-auto">
           <Link
-            className="text-[#e7d3ff] text-[17px] hover:text-blue-500 transition-all duration-200 my-auto font-[100]"
+            className="text-[#e7d3ff] text-[17px] transition-all duration-200 my-auto font-[100]"
             href="#contact"
           >
             Contact
@@ -36,7 +36,7 @@ const DesktopNav = () => {
             <a target="_blank" href="https://twitter.com/thedevemmanuel/">
               <TwitterIcon
                 fontSize="medium"
-                className="text-[#defb81] hover:text-blue-500"
+                className="text-[#defb81]0"
               />
             </a>
           </li>
@@ -44,7 +44,7 @@ const DesktopNav = () => {
             <a target="_blank" href="https://github.com/realemmanuel">
               <GitHubIcon
                 fontSize="medium"
-                className="text-[#defb81] hover:text-blue-500"
+                className="text-[#defb81]"
               />
             </a>
           </li>
