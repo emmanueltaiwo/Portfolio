@@ -40,7 +40,7 @@ const HeroSection = () => {
           href="/assets/documents/Taiwo Emmanuel Resume.pdf"
           download
           target="_blank"
-          className="mt-2 md:mt-5 w-fit h-fit flex gap-3 items-center justify-center text-lg font-[500] md:font-[200] border-[2px] md:border-[1px] hover:border-[2px] py-3 border-[#e7d3ff] px-14 text-[#e7d3ff] hover:border-blue-500 rounded-md "
+          className="mt-2 md:mt-5 w-fit h-fit flex gap-3 items-center justify-center text-lg font-[500] md:font-[200] border-[2px] md:border-[1px] hover:border-[2px] py-3 border-[#e7d3ff] px-14 text-[#e7d3ff] rounded-md "
         >
           <CloudDownloadIcon />
           My Resume

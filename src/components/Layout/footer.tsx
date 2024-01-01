@@ -30,7 +30,7 @@ const Footer = () => {
             <a target="_blank" href="https://github.com/realemmanuel">
               <GitHubIcon
                 fontSize="medium"
-                className="text-[#defb81] hover:text-blue-500"
+                className="text-[#defb81]"
               />
             </a>
           </li>
@@ -41,7 +41,7 @@ const Footer = () => {
             >
               <LinkedInIcon
                 fontSize="medium"
-                className="text-[#defb81] hover:text-blue-500"
+                className="text-[#defb81]"
               />
             </a>
           </li>
@@ -49,7 +49,7 @@ const Footer = () => {
             <a target="_blank" href="https://twitter.com/thedevemmanuel/">
               <TwitterIcon
                 fontSize="medium"
-                className="text-[#defb81] hover:text-blue-500"
+                className="text-[#defb81]"
               />
             </a>
           </li>
@@ -57,7 +57,7 @@ const Footer = () => {
             <a target="_blank" href="https://www.instagram.com/itsdevemmanuel/">
               <InstagramIcon
                 fontSize="medium"
-                className="text-[#defb81] hover:text-blue-500"
+                className="text-[#defb81]"
               />
             </a>
           </li>
